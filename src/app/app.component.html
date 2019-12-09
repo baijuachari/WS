@@ -13,8 +13,15 @@
     <span>Summary: {{ description | summary: 20 }}</span>
   </div>
   <div>
-    <app-favorite></app-favorite>
+    <app-favorite [isFavorite]="isFavorite" (change)="onFavoriteChanged($event)"></app-favorite>
   </div>
+  <div>
+    <!-- <a href="mailto:email@example.com">Send Email</a> -->
+  </div>
+  <li>
+    <i class="fa fa-envelope"></i>
+    <a href="{{ getEmailString() }}">Send Email</a>
+  </li>    
 </div>
 
 

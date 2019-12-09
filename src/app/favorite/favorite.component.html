@@ -1,4 +1,8 @@
 <p>
-  <span *ngIf="isFavorite"><button type="button" class="btn btn-primary" (click)="onClickFavorite()">P</button></span>
-  <span *ngIf="!isFavorite"><button type="button" display="none" class="btn btn-success" (click)="onClickFavorite()">S</button></span>
+  <button type="button" class="btn"
+    [class.btn-success]="isFavorite"
+    [class.btn-primary]="!isFavorite"
+    (change)="onFavoriteChanged()"
+    (click)="onClickFavorite()">{{ buttonLabel }}
+  </button>
 </p>
