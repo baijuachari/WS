@@ -7,6 +7,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { TitleCasePipe } from './title-case.pipe';
+import { InputFormatDirective } from './input-format.directive';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { TitleCasePipe } from './title-case.pipe';
     AppComponent,
     SummaryPipe,
     FavoriteComponent,
-    TitleCasePipe
+    TitleCasePipe,
+    InputFormatDirective
   ],
   imports: [
     BrowserModule,
