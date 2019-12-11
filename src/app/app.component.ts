@@ -20,4 +20,8 @@ export class AppComponent {
     emailString += '?subject=Mail to the sender';
     return emailString;
   }
+
+  onSubscribeClicked() {
+    console.log('--subscriber clicked--');
+  }
 }
